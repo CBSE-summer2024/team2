@@ -1,5 +1,4 @@
-import { html, css, LitElement } from "lit"; // Import `css` from `lit`
-import user from '../api/faker.json'; // Assuming you have a valid use for this import
+import { html, css, LitElement } from "lit"; 
 
 export class SignUp extends LitElement {
   static properties = {
@@ -7,7 +6,7 @@ export class SignUp extends LitElement {
     password: { type: String },
     firstName: { type: String },
     lastName: { type: String },
-    phoneNumber: { type: String }, // Fixed typo
+    phoneNumber: { type: String },
   };
 
   static styles = css`
@@ -140,15 +139,46 @@ export class SignUp extends LitElement {
     this[name] = value;
   }
 
-  handleSubmit(e) {
+  async handleSubmit(e) {
     e.preventDefault(); // Prevent the default form submission behavior
-    console.log('Form Submitted', {
-      firstName: this.firstName,
-      lastName: this.lastName,
-      email: this.email,
-      password: this.password,
-      phoneNumber: this.phoneNumber,
-    });
+  
+    try {
+      const newUser = {
+        firstName: this.firstName,
+        lastName: this.lastName,
+        email: this.email,
+        password: this.password,
+        phoneNumber: this.phoneNumber,
+      };
+  
+      // Send a POST request to the API to add the user
+      const response = await fetch('http://localhost:3000/api/addUser', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(newUser),
+      });
+      
+  
+      const result = await response.json();
+  
+      if (response.ok) {
+        console.log(result.message);
+        // Optionally, you could reset the form fields here:
+        this.firstName = '';
+        this.lastName = '';
+        this.email = '';
+        this.password = '';
+        this.phoneNumber = '';
+      } else {
+        console.error('Failed to add user:', result.error);
+        alert(`Failed to add user: ${result.error}`);
+      }
+    } catch (error) {
+      console.error('Error during form submission:', error.message);
+      alert('An error occurred while adding the user. Please try again.');
+    }
   }
 }
 
