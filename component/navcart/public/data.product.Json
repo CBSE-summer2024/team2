@@ -1,0 +1,25 @@
+[
+    { 
+      "id": 1, 
+      "name": "بلوزة ولادي", 
+      "price": 30, 
+      "quantity": 1,
+      "image": "https://cdn.salla.sa/zjDx/1hoxdAGYStSp9BCyqXWP2vcLRkyPzBzN5nGaJ5ad.jpg"
+    },
+    { 
+      "id": 2, 
+      "name": "حذاء رجالي", 
+      "price": 70, 
+      "quantity": 1,
+      "image": "https://png.pngtree.com/png-vector/20201129/ourmid/pngtree-black-sneakers-png-image_2442993.jpg"
+    },
+    {
+      "id": 3, 
+      "name": "حذاء رجالي", 
+      "price": 70, 
+      "quantity": 1,
+      "image": "https://png.pngtree.com/png-vector/20201129/ourmid/pngtree-black-sneakers-png-image_2442993.jpg"
+    }
+    
+  ]
+  
