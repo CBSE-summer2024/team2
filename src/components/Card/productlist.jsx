@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import ProductCard from './ProductCard'; 
 import './ProductCard.css';  
 
-import productList from '../../../data.json';  
+import list from '../../../data.json';  
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    setProducts(productList.product || []);
+    setProducts(list.product || []);
   }, []);
 
   return (

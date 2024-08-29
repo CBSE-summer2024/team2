@@ -1,6 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import data from '../../../data.json';  // Import the JSON file
-
+import data from '../../../data.json';  
 export class SignIn extends LitElement {
   static properties = {
     email: { type: String },
@@ -44,7 +43,7 @@ export class SignIn extends LitElement {
     super();
     this.email = '';
     this.password = '';
-    this.user = null; // Initialize user property
+    this.user = null; 
   }
 
   render() {
@@ -70,7 +69,6 @@ export class SignIn extends LitElement {
   }
 
   _handleSignin() {
-    // Access the users array from the data object
     const users = data.users;
     
     const user = users.find(user => user.email === this.email && user.password === this.password);
