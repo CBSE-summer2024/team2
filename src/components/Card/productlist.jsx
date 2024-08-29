@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import ProductCard from './ProductCard'; 
 import './ProductCard.css';  
 
-import list from '../../../data.json';  
+import data from '../../../data.json';  // تأكد من المسار الصحيح للملف
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    setProducts(list.product || []);
+    setProducts(data.list || []);  // تأكد من استخدام البيانات من المفتاح 'list'
   }, []);
 
   return (
