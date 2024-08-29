@@ -9,7 +9,13 @@ app.use(bodyParser.json());
 app.use(cors());  // Enable CORS for all routes
 
 const dirname = path.resolve(); // Get the current directory name
-const filePath = path.join(dirname, 'faker.json');
+const filePath = path.join(dirname, '../../data.json');
+
+// Ensure the data.json file exists
+if (!fs.existsSync(filePath)) {
+  console.log('Creating data.json file...');
+  fs.writeFileSync(filePath, JSON.stringify({ users: [] }, null, 2), 'utf8');
+}
 
 // POST route to add a new user
 app.post('/api/addUser', (req, res) => {
@@ -20,9 +26,10 @@ app.post('/api/addUser', (req, res) => {
     return res.status(400).json({ error: 'All fields are required' });
   }
 
-  // Read the existing data from faker.json
+  // Read the existing data from data.json
   fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {
+      console.error('Error reading data:', err);
       return res.status(500).json({ error: 'Error reading data' });
     }
 
@@ -39,9 +46,10 @@ app.post('/api/addUser', (req, res) => {
     newUser.id = jsonData.users.length + 1; // Assign a new ID
     jsonData.users.push(newUser); // Add the new user
 
-    // Write the updated data back to faker.json
+    // Write the updated data back to data.json
     fs.writeFile(filePath, JSON.stringify(jsonData, null, 2), (err) => {
       if (err) {
+        console.error('Error writing data:', err);
         return res.status(500).json({ error: 'Error writing data' });
       }
       res.status(200).json({ message: 'User added successfully!' });

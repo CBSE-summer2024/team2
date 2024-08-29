@@ -18,7 +18,7 @@ const categories = ref([]);
 // دالة لجلب الفئات من API
 const fetchCategories = async () => {
   try {
-    const response = await fetch('../../api/ecommerce_schema.json'); 
+    const response = await fetch('../../../data.json'); 
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
 import './cart.css';
-
+import path from '../../../data.json'
 const ShoppingCart = () => {
   const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
-    fetch('/data.product.json')
+    fetch(path)
       .then(response => response.json())
       .then(data => setCartItems(data))
       .catch(error => console.error('Error loading data:', error));

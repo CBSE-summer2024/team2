@@ -1,14 +1,14 @@
-import ShoppingCart from './Cart/cart';
-import ArabicNavbar from './Navbar/navbar';
-import ProductList from './card/productlist';
-import Signin from './page/login.js';
-import Signup from './page/signup';
-import './auth/sign-in.js';
-import './auth/sign-up.js';
+import ShoppingCart from './components/Cart/cart.js';
+import ArabicNavbar from './components/Navbar/navbar.jsx';
+import ProductList from './components/Card/productlist.js';
+import Signin from './components/Signin/sign-in.js';
+import Signup from './components/Signup/sign-up.js';
+import listofcategory from './components/Categorylist/listofcategory.vue';
 export {
     ShoppingCart,
     ArabicNavbar,
-    Signin,
     ProductList,
-    Signup
+    Signin,
+    Signup,
+    listofcategory
 }
