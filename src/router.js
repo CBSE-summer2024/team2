@@ -7,14 +7,11 @@ import ProductList from './components/Card/productlist.jsx';
 import { SignIn } from './components/Signin/sign-in.js';
 import { SignUp } from './components/Signup/sign-up.js';
 
-// Import Vue components
-import listofcategory from './components/Categorylist/listofcategory.vue';
-
+// Export React components
 export {
     ShoppingCart,
     ArabicNavbar,
     ProductList,
-    SignIn, 
-    SignUp,  // Note the curly braces for named exports
-    listofcategory
+    SignIn,
+    SignUp
 };

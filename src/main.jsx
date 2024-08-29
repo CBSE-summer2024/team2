@@ -5,7 +5,6 @@ import { createApp } from 'vue';
 import App from './App.jsx';
 import listofcategory from './components/Categorylist/listofcategory.vue';
 
-
 // Render React app
 ReactDOM.createRoot(document.getElementById('react-root')).render(<App />);
 

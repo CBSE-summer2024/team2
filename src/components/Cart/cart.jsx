@@ -1,15 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
 import './cart.css';
-import path from '../../../data.json'
+import data from '../../../data.json'; // Importing JSON data directly
+
 const ShoppingCart = () => {
   const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
-    fetch(path)
-      .then(response => response.json())
-      .then(data => setCartItems(data))
-      .catch(error => console.error('Error loading data:', error));
+    // Assuming 'product' is the key where your cart items are stored in the JSON
+    setCartItems(data.product || []); // Use default empty array if 'product' key doesn't exist
   }, []);
 
   const handleQuantityChange = (id, event) => {
