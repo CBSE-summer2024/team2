@@ -8,7 +8,7 @@ const ProductList = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    setProducts(list.product || []);
+    setProducts(list.list || []);
   }, []);
 
   return (

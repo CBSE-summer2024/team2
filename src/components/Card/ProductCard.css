@@ -1,7 +1,7 @@
 .product-list-container {
   padding: 20px; 
   text-align: center;
-  margin-top: 100px; 
+  margin-top: 300px; 
   position: relative; 
 }
 
@@ -14,13 +14,13 @@
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 160px;
   justify-content: center; 
 }
 
 .product-card {
   flex: 1 1 calc(25% - 16px);
-  max-width: calc(25% - 16px);
+  max-width: calc(50% - 16px);
   box-sizing: border-box;
   border: 1px solid #ddd;
   padding: 12px;
