@@ -1,5 +1,5 @@
 import { LitElement, css, html } from 'lit';
-import data from '../../api/data.json';
+import data from '../../api/data.json';  // Import the JSON file
 
 export class SignIn extends LitElement {
   static properties = {
