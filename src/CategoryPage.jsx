@@ -13,7 +13,7 @@ const CategoryPage = () => {
 
   return (
     <div>
-      <div id="vue-root"></div> 
+      <vueApp></vueApp>
     </div>
   );
 };

@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import img1 from "../../assets/images/1.jpg";
-import img2 from "../../assets/images/2.jpg";
-import img3 from "../../assets/images/3.jpg";
+import img1 from "../../assets/1.jpg";
+import img2 from "../../assets/2.jpg";
+import img3 from "../../assets/3.jpg";
 
 export default {
   name: "Slider",
@@ -53,9 +53,9 @@ export default {
 
 <style scoped>
 .slider-container {
-
+  border-radius: 10px solid black;
   position: relative;
-  width: 80%;
+  width: 90%;
   margin: auto;
   margin-top: 50px;
   overflow: hidden;
@@ -73,7 +73,7 @@ export default {
 
 img {
   width: 100%;
-  height: 800px;
+  height: 500px;
   object-fit: cover;
   border-radius: 8px; /* Optional: for rounded corners */
 }

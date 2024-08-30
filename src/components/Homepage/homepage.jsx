@@ -2,10 +2,12 @@ import React from 'react';
 import { Fade } from 'react-reveal';
 import '../../main.css';
 import { Link } from 'react-router-dom'; 
-
+import Slider from '../Slider/slider'
 function Homepage() {
     return (
-        <div className="home">
+    <>
+    <Slider></Slider>
+    <div className="home">
             <div className="H-content">
                 <Fade top>
                     <h1>أهلا بكم في موقع التجارة الإلكترونية الأول في فلسطين </h1>
@@ -21,6 +23,7 @@ function Homepage() {
                 </Fade>
             </div>
         </div>
+        </>
     );
 }
 
