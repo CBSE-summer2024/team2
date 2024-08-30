@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
-import './cart.css';
+import '../../main.css';
 import data from '../../../data.json'; 
 
 const ShoppingCart = () => {

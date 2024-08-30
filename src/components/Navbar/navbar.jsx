@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './navbar.css';
+import '../../main.css';
 import logo from "./assets/e-commerce.png";
 
 const ArabicNavbar = () => {
@@ -18,7 +18,7 @@ const ArabicNavbar = () => {
       </Navbar.Brand>
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
-        <Nav.Link as={Link} to="/homepage" className="nav-link-custom"> الصفحة الرئيسية</Nav.Link>
+        <Nav.Link as={Link} to="/" className="nav-link-custom"> الصفحة الرئيسية</Nav.Link>
           <Nav.Link as={Link} to="/new-arrivals" className="nav-link-custom"> وصلنا حديثا </Nav.Link>
           <Nav.Link as={Link} to="/about-us" className="nav-link-custom"> من نحن </Nav.Link>
           <Nav.Link as={Link} to="/cart" className="nav-link-custom"> سلة المشتريات </Nav.Link>

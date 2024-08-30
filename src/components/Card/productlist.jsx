@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ProductCard from './ProductCard'; 
-import './ProductCard.css';  
+import '../../main.css';  
 
 import list from '../../../data.json';  
 
