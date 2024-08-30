@@ -6,7 +6,7 @@
     background-image: url('e-commerce.jpg');
     background-size: cover;
     background-position: center;
-    color: rgb(241, 240, 238);
+    color: rgb(0, 0, 0);
 }
 
 .H-content {
@@ -16,13 +16,12 @@
 .button {
     padding: 10px 20px;
     background-color: #4da3dc;
-    color: white;
+    color: rgb(250, 250, 250);
     border: none;
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
     text-decoration: none;
-    margin-top: 20px; /* Adjust as needed */
 }
 
 .button:hover {
@@ -30,9 +29,9 @@
 }
 
 .color {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .contaner-button {
-    margin-top: 20px; 
+    margin-top: 40px; /* Increase this value to move the button further down */
 }

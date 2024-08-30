@@ -1,7 +1,7 @@
 import React from 'react';
 import { Fade } from 'react-reveal';
 import '../../main.css';
-import { Link, Route } from 'react-router-dom'; 
+import { Link } from 'react-router-dom'; 
 
 function Homepage() {
     return (
@@ -14,8 +14,10 @@ function Homepage() {
                 <Fade bottom delay={500}>
                     <h2 className='color'>  اكتشف عالمنا الجديد وابدأ رحلتك الآن مع موقعنا </h2>
                 </Fade>
-                <Fade bottom delay={1000} className ="contaner-button" >
-                    <Link to="/ProductList" className="button" > عرض المنتجات    </Link>
+                <Fade bottom delay={1000}>
+                    <div className="contaner-button">
+                        <Link to="/ProductList" className="button">عرض المنتجات</Link>
+                    </div>
                 </Fade>
             </div>
         </div>
