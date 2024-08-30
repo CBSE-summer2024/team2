@@ -61,7 +61,21 @@ To get started with this project, clone the repository and install the necessary
 git clone <repository-url>
 cd <project-directory>
 npm install
-npm run dev
+npm run dev;
+
+
+
+##  to Run server : 
+```bash
+cd src
+cd api
+node server.js
+
+
+
+
+
+
 
 ## Demo
 
