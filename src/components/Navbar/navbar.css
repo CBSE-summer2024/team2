@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+
+.navbar-custom {
+  
+    background-color: #74a7d4; 
+    font-family: 'Cairo ', serif;
+   }
+  
+  .navbar-brand-custom {
+        margin-right: 93%; 
+  }
+  
+  .navbar-brand-custom img {
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+  
+
+  .nav-link-custom {
+    margin:  30px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .nav-link-custom:hover {
+    color: #fff; 
+    background-color: #e2a746; 
+    border-radius: 5px; 
+    padding: 5px;
+}
+  @media (max-width: 768px) {
+    .navbar-custom {
+  
+      background-color: #a8d1fb; 
+      font-family: 'Cairo ', serif;
+      height: 77px;
+      font-size: 10px;
+     }
+     .navbar-brand-custom {
+      display: flex;
+      align-items: center;
+      margin-right: 88%; 
+      
+    }
+    .nav-link-custom {
+      margin:  10px;
+      text-decoration: none;
+    }
+    .navbar-collapse {
+      margin-right: 10px;
+      margin-bottom: 70px; 
+    }
+    .navbar-brand-custom img {
+      margin-right: 10px;
+      margin-top: 20px; 
+      width:50%;
+      height: 80%;
+    }
+
+  }
+  
+ 

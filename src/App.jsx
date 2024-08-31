@@ -1,14 +1,24 @@
-// src/App.jsx
 import React from 'react';
-import Navbar from './components/Navbar';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ShoppingCart, ArabicNavbar, ProductList, SignIn, SignUp,Homepage } from './router'; 
 
 const App = () => {
   return (
-    <div>
-      <Navbar />
-      <div id="vue-root"></div>
-      <sign-in-form></sign-in-form>
-    </div>
+    <BrowserRouter>
+      <ArabicNavbar />
+      <Routes>
+
+        <Route path="/" element={<Homepage />} />
+        <Route path="/Productlist" element={<ProductList />} />
+
+        <Route path="/cart" element={<ShoppingCart />} />
+        <Route path="/login" element={<sign-in></sign-in>} />
+        <Route path="/signup" element={<sign-up></sign-up>} />
+        <Route path="/signup" element={<sign-up></sign-up>} />
+      </Routes>
+
+    </BrowserRouter>
+    
   );
 };
 
