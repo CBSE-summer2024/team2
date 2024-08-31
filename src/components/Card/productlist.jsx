@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import ProductCard from './ProductCard'; 
-import '../../main.css';  
-
-import list from '../../../data.json';  
+import ProductCard from './ProductCard';
+import '../../main.css';
+import list from '../../../data.json';
+import CategoryListComponent from '../../router';
+import Slider from '../Slider/slider.jsx';
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
@@ -11,12 +12,17 @@ const ProductList = () => {
     setProducts(list.list || []);
   }, []);
 
-  return (
+  return (<>
+    <div className="category">
+      <CategoryListComponent></CategoryListComponent>
+    </div>
     <div className="product-list">
       {products.map(product => (
         <ProductCard key={product.id} product={product} />
       ))}
     </div>
+    <Slider></Slider>
+  </>
   );
 };
 

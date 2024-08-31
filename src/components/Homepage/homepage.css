@@ -35,3 +35,39 @@
 .contaner-button {
     margin-top: 40px; /* Increase this value to move the button further down */
 }
+
+.header-text:nth-child(1) {
+    position: relative;
+    left: 100%;
+    opacity: 0;
+    animation: slide-in 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+.header-text:nth-child(2) {
+    position: relative;
+    left: 100%;
+    opacity: 0;
+    animation: slide-in 1s ease-in-out forwards;
+    animation-delay: 1s;
+}
+
+.header-text:nth-child(3) {
+    position: relative;
+    left: 100%;
+    opacity: 0;
+    animation: slide-in 1s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes slide-in {
+    from {
+        left: 100%;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
