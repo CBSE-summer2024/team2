@@ -5,8 +5,8 @@ import Homepage from "./components/Homepage/homepage.jsx";
 
 import { SignIn } from "./components/Signin/sign-in.js";
 import { SignUp } from "./components/Signup/sign-up.js";
-import { CategoryList } from "./components/ListOfCategory/ListOfCategory.jsx";
-
+import CategoryListComponent from './components/ListOfCategory/ListOfCategory.jsx';
+export default CategoryListComponent;
 export {
   ShoppingCart,
   ArabicNavbar,
@@ -14,5 +14,6 @@ export {
   Homepage,
   SignIn,
   SignUp,
-  CategoryList,
+  CategoryListComponent
+ 
 };

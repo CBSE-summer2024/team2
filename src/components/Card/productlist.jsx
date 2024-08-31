@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import ProductCard from './ProductCard';
 import '../../main.css';
-import Footer from '../Footer/footer.jsx'
 import list from '../../../data.json';
-import CategoryList from '../../router.js'
+import CategoryListComponent from '../../router';
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
@@ -13,9 +12,8 @@ const ProductList = () => {
   }, []);
 
   return (<>
-    <CategoryList></CategoryList>
     <div className="category">
-      <Footer></Footer>
+      <CategoryListComponent></CategoryListComponent>
     </div>
     <div className="product-list">
       {products.map(product => (

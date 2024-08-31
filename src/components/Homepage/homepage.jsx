@@ -2,7 +2,9 @@ import React from 'react';
 import { Fade } from 'react-reveal';
 import '../../main.css';
 import { Link } from 'react-router-dom';
-import Slider from '../Slider/slider'
+import Slider from '../Slider/slider';
+import CategoryListComponent from '../../components/ListOfCategory/ListOfCategory.jsx'; // Corrected path
+
 function Homepage() {
     return (
         <>

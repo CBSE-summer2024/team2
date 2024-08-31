@@ -1,19 +1,21 @@
 import React, { useEffect } from "react";
-import "./category-list"; // Adjust the path according to your file structure
+// Static import to ensure the custom element is registered
 
 const CategoryListComponent = () => {
     useEffect(() => {
-        // This will make sure the custom element is available after the React component mounts
+        // Optional: Dynamically import if you want to delay the loading
         import("./category-list");
     }, []);
 
     return (
         <div>
             <h1>Category List</h1>
-            {/* Using the Lit component in React */}
+            {/* Use the Lit component in React */}
             <category-list></category-list>
         </div>
     );
 };
 
+
 export default CategoryListComponent;
+
