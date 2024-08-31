@@ -22,6 +22,7 @@ The navbar is built using React and provides navigation throughout the website. 
 screenshot :![Navbar](images/navbar-screenshot.png)
 
 ### Footer : 
+vue.js
 screenshot :![Footer](images/footer-screenshot.png)
 
 
@@ -54,9 +55,7 @@ screenshot :![ Sign-Up](images/signup-screenshot.png)
 This component is a mixture of React and View.
 screenshot :![ Homepage](images/Homepage.png)
 
-### Footer() :
-vue.js
-screenshot :![ Footer](images/footer.png)
+
 
 ### Server() :
 node.js
