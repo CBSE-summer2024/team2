@@ -1,7 +1,7 @@
 # team2
 # E-Commerce Website
 
-This is an e-commerce website project featuring various components built using different technologies. The project includes a navbar, shopping cart, card components, a list of categories, and authentication functionalities.
+This is an e-commerce website project featuring various components built using different technologies. The project includes a navbar, shopping ,footer,cart, card components, a list of categories, and authentication functionalities.
 
 ## Project Overview
 
@@ -10,9 +10,9 @@ This project is an e-commerce website that allows users to browse products, mana
 ## Technologies Used
 
 - **React**: For building the Navbar, Shopping Cart, and Card components,homepage.
-- **Vue**: For displaying the List of Categories and slider.
-- **Lit**: For the Login and Sign-Up components.
-
+- **Vue**: For displaying the slider.
+- **Lit** ,**Node.js**: For the Login and Sign-Up components and List of Categories.
+-**vite** : for integration
 
 ## Components
 
@@ -20,6 +20,10 @@ This project is an e-commerce website that allows users to browse products, mana
 
 The navbar is built using React and provides navigation throughout the website. It includes links to different sections of the site and is responsive.
 screenshot :![Navbar](images/navbar-screenshot.png)
+
+### Footer : 
+screenshot :![Footer](images/footer-screenshot.png)
+
 
 
 ### Shopping Cart 
@@ -36,7 +40,7 @@ screenshot :![Card Component](images/card-component-screenshot.png)
 
 ### List of Categories
 
-The list of categories is implemented using Vue and allows users to filter products based on different categories. It provides an organized view of available product categories.
+The list of categories is implemented using Lit and allows users to filter products based on different categories. It provides an organized view of available product categories.
 i
 screenshot :![List of Categories](images/list-of-categories-screenshot.png)
 
@@ -50,25 +54,23 @@ screenshot :![ Sign-Up](images/signup-screenshot.png)
 This component is a mixture of React and View.
 screenshot :![ Homepage](images/Homepage.png)
 
+### Footer() :
+vue.js
+screenshot :![ Footer](images/footer.png)
 
-
+### Server() :
+node.js
+screenshot :![ Server](images/server-screenshot.png)
 
 ## Installation
 
 To get started with this project, clone the repository and install the necessary dependencies:
-
-
-
 ```bash
 git clone <repository-url>
 cd <project-directory>
 npm install
 npm run dev;
 
-##  If you encounter any issues with dependencies : 
-npm install --legacy-peer-deps
-npm install --force
-npm install react@16 react-dom@16        or    npm install react@18 react-dom@18
 
 ##  to Run server : 
 ```bash
@@ -76,16 +78,10 @@ cd src
 cd api
 node server.js
 
-
-
-
-
-
-
 ## Demo
 
 ### Watch the demo of our e-commerce website
 
 You can watch the demo video showcasing the features and UI of our e-commerce website by clicking the link below:
 
-[Watch Demo (https://www.loom.com/share/your-video-link)
+[Watch Demo (https://youtu.be/JdIUwMjHkUY)

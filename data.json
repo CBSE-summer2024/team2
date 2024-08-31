@@ -38,6 +38,22 @@
       "password": "aaaaaaa",
       "phoneNumber": "56604310",
       "id": 5
+    },
+    {
+      "firstName": "ghadg",
+      "lastName": "fgjgjgj",
+      "email": "ghaith@gmail.com",
+      "password": "dsfsfsfs",
+      "phoneNumber": "0593927240",
+      "id": 6
+    },
+    {
+      "firstName": "hfhfhf",
+      "lastName": "fhfhfhf",
+      "email": "ayman@gmail.com",
+      "password": "fhfhfh",
+      "phoneNumber": "0593927240",
+      "id": 7
     }
   ],
   "product": [

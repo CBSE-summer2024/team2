@@ -59,6 +59,7 @@ export default {
   margin: auto;
   margin-top: 50px;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .slider {
