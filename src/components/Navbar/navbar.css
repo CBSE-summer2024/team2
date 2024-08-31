@@ -19,6 +19,7 @@
   .nav-link-custom {
     margin:  30px;
     text-decoration: none;
+    font-size: 20px;
   }
   .nav-link-custom:hover {
     color: #fff; 
@@ -38,6 +39,7 @@
       display: flex;
       align-items: center;
       margin-right: 88%; 
+      
     }
     .nav-link-custom {
       margin:  10px;
