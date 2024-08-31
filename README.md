@@ -83,4 +83,4 @@ node server.js
 
 You can watch the demo video showcasing the features and UI of our e-commerce website by clicking the link below:
 
-[Watch Demo (https://youtu.be/JdIUwMjHkUY)
+[Watch Demo](https://youtu.be/JdIUwMjHkUY)
