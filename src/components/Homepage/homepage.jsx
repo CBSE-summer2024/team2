@@ -1,9 +1,9 @@
 import React from 'react';
-import { Fade } from 'react-reveal';
+
 import '../../main.css';
 import { Link } from 'react-router-dom';
 import Slider from '../Slider/slider';
-import CategoryListComponent from '../../components/ListOfCategory/ListOfCategory.jsx'; // Corrected path
+import Footer from '../Footer/footer';
 
 function Homepage() {
     return (
@@ -11,20 +11,21 @@ function Homepage() {
             <Slider></Slider>
             <div className="home">
                 <div className="H-content">
-                    <Fade top>
+                    <div className='header-text' >
                         <h1>أهلا بكم في موقع التجارة الإلكترونية الأول في فلسطين </h1>
-                    </Fade>
+                    </div >
 
-                    <Fade bottom delay={500}>
+                    <div className='header-text' >
                         <h2 className='color'>  اكتشف عالمنا الجديد وابدأ رحلتك الآن مع موقعنا </h2>
-                    </Fade>
-                    <Fade bottom delay={1000}>
+                    </div >
+                    <div className='header-text' >
                         <div className="contaner-button">
                             <Link to="/ProductList" className="button">عرض المنتجات</Link>
                         </div>
-                    </Fade>
+                    </div >
                 </div>
             </div>
+            <Footer/>
         </>
     );
 }

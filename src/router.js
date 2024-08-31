@@ -14,6 +14,7 @@ export {
   Homepage,
   SignIn,
   SignUp,
-  CategoryListComponent
+  CategoryListComponent,
+
  
 };

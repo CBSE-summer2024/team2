@@ -3,6 +3,7 @@ import ProductCard from './ProductCard';
 import '../../main.css';
 import list from '../../../data.json';
 import CategoryListComponent from '../../router';
+import Slider from '../Slider/slider.jsx';
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
@@ -20,6 +21,7 @@ const ProductList = () => {
         <ProductCard key={product.id} product={product} />
       ))}
     </div>
+    <Slider></Slider>
   </>
   );
 };
