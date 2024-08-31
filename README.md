@@ -64,10 +64,12 @@ git clone <repository-url>
 cd <project-directory>
 npm install
 npm run dev;
+
 ##  If you encounter any issues with dependencies : 
 npm install --legacy-peer-deps
 npm install --force
-npm install react@16 react-dom@16
+npm install react@16 react-dom@16        or    npm install react@18 react-dom@18
+
 ##  to Run server : 
 ```bash
 cd src
