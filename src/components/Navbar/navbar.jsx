@@ -23,7 +23,6 @@ const ArabicNavbar = () => {
           <Nav.Link as={Link} to="/about-us" className="nav-link-custom"> من نحن </Nav.Link>
           <Nav.Link as={Link} to="/cart" className="nav-link-custom"> سلة المشتريات </Nav.Link>
           <Nav.Link as={Link} to="/contact" className="nav-link-custom"> تواصل معنا </Nav.Link>
-          <Nav.Link as={Link} to="/categories" className="nav-link-custom"> التصنيفات </Nav.Link>
           <Nav.Link as={Link} to="/login" className="nav-link-custom"> تسجيل الدخول </Nav.Link>
           <Nav.Link as={Link} to="/signup" className="nav-link-custom"> التسجيل في الموقع  </Nav.Link>
 
